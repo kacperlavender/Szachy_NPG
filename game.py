@@ -1,0 +1,1 @@
+# zasady gry, ruchy, tury

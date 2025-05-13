@@ -1,4 +1,4 @@
-Epik 1: Podstawy gry
+# Epik 1: Podstawy gry
 Jako gracz, chcę zobaczyć planszę szachową, aby wiedzieć, gdzie są figury.
 – Priorytet: Wysoki
 
@@ -8,8 +8,9 @@ Jako gracz, chcę mieć możliwość ustawienia figur na planszy zgodnie z zasad
 Jako gracz, chcę móc poruszać figurami zgodnie z zasadami szachów.
 – Priorytet: Wysoki
 
+---
 
-Epik 2: Zasady gry
+# Epik 2: Zasady gry
 Jako gracz, chcę żeby system sprawdzał poprawność ruchów.
 – Priorytet: Wysoki
 
@@ -19,7 +20,9 @@ Jako gracz, chcę żeby ruchy specjalne (roszada, en passant, promocja) były mo
 Jako gracz, chcę żeby gra wykrywała szach, mat i pat.
 – Priorytet: Wysoki
 
-Epik 3: Interfejs i UX
+---
+
+# Epik 3: Interfejs i UX
 Jako gracz, chcę widzieć, który gracz ma ruch.
 – Priorytet: Średni
 
