@@ -5,10 +5,11 @@ class Plansza:
         #dodac ustawienie początkowe
 
     def __str__(self):
-        s=""
+        s = "  a b c d e f g h\n"
         for r in range(7, -1, -1):
+            s += f"{r + 1} "
             for c in range(8):
-                #dodac sprawdzanie figur
-                s += ". "
+                figura = self.pola[r][c]
+                s += (str(figura) + " ") if figura else (". ")
             s += "\n"
         return s
