@@ -1,0 +1,7 @@
+Podsumowanie trzeciego spotkania:
+- Dodanie figur i implementacja logiki ich działania,
+- Zaplanowanie implementacji podstawowych funkcji danych figur (bicie, roszady itd.),
+- Przygotowanie i zaplanowanie wyglądu i funkcjonalności planszy,
+- Dyskusja na temat wyglądu danych figur,
+- Dyskusja na temat dodatkowych funkcjonalności (gra online, gra ze sztuczną inteligencja),
+- Podsumowanie dotychczas wykonanej pracy i przydział nowych obowiązków.
