@@ -1,0 +1,5 @@
+Podsumowanie drugiego spotkania:
+- rozplanowanie logiki działania pionków,
+- przygotowanie struktury plikó projektu,
+- ustalenie podstawowych wymaganiach stawianych projektowanej aplikacji,
+- rozpoczęcie dokumentacji technicznej, 
