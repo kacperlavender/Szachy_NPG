@@ -36,7 +36,7 @@ class Plansza:
             s += f"{r + 1} "
             for c in range(8):
                 figura = self.pola[r][c]
-                s += (str(figura) + " ") if figura else (". ")
+                s += (str(figura) + " ") if figura else (".. ")
             s += "\n"
         return s
 
