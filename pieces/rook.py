@@ -1,3 +1,5 @@
+from pieces.piece import Figura
+
 class Wieza(Figura):
     # Metoda do wyliczania możliwych ruchów wieży
     def mozliwe_ruchy(self, plansza):

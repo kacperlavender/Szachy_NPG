@@ -1,3 +1,5 @@
+from pieces.piece import Figura
+
 class Krol(Figura):
     def mozliwe_ruchy(self, plansza):
         ruchy = []

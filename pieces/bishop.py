@@ -1,4 +1,6 @@
-# Klasa Goniec dziedziczy po klasie Figura
+from pieces.piece import Figura
+
+#Klasa Goniec dziedziczy po klasie Figura
 class Goniec(Figura):
     # Metoda zwracająca listę możliwych ruchów dla gońca
     def mozliwe_ruchy(self, plansza):

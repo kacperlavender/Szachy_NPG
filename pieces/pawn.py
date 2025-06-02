@@ -1,3 +1,5 @@
+from pieces.piece import Figura
+
 class Pionek(Figura):
     def mozliwe_ruchy(self, plansza):
         ruchy = []

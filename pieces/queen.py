@@ -1,3 +1,5 @@
+from pieces.piece import Figura
+
 # Klasa Krolowa (królowa), która dziedziczy po klasie Figura
 class Krolowa(Figura):
     # Metoda zwracająca wszystkie możliwe ruchy królowej na danej planszy

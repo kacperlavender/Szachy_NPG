@@ -1,3 +1,11 @@
+from pieces.piece import Figura
+from pieces.pawn import Pionek
+from pieces.rook import Wieza
+from pieces.knight import Skoczek
+from pieces.bishop import Goniec
+from pieces.queen import Krolowa
+from pieces.king import Krol
+
 class Plansza:
     def __init__(self):
         self.pola = [[None for _ in range(8)] for _ in range(8)]
@@ -6,18 +14,21 @@ class Plansza:
     #podmienić na faktyczne klasy figur
     def initialise(self):
         for c in range(8):
-            self.pola[1][c] = "P"
-            self.pola[6][c] = "p"
-        self.initialise_figure(0,"w");
-        self.initialise_figure(1,"k");
-        self.initialise_figure(2,"b");
-        self.initialise_figure(3,"k");
+            self.pola[1][c] = Pionek('bialy', (1, c))
+            self.pola[6][c] = Pionek('czarny', (6, c))
+        self.initialise_figure(0,Wieza);
+        self.initialise_figure(1,Skoczek);
+        self.initialise_figure(2,Goniec);
+        self.pola[0][3] = Krol('bialy', (1, c))
+        self.pola[0][4] = Krolowa('bialy', (6, c))
+        self.pola[7][3] = Krol('czarny', (1, c))
+        self.pola[7][4] = Krolowa('czarny', (6, c))
 
     def initialise_figure(self, kor,f):
-        self.pola[0][kor] = f
-        self.pola[0][7-kor] = f
-        self.pola[7][kor] = f
-        self.pola[7][7-kor] = f
+        self.pola[0][kor] = f('bialy',(0,kor))
+        self.pola[0][7-kor] = f('bialy',(0,7-kor))
+        self.pola[7][kor] = f('czarny',(7,kor))
+        self.pola[7][7-kor] = f('czarny',(7,7-kor))
 
     def __str__(self):
         s = "  a b c d e f g h\n"
@@ -43,6 +54,3 @@ class Plansza:
             figura.pozycja = (dr, dc)
             return True
         return False
-
-plansza = Plansza()
-print(plansza)
