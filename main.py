@@ -11,6 +11,7 @@ def konwertuj_notacje(notacja):
 
 plansza = Plansza()
 print(plansza)
+print(f"Tura gracza: {plansza.tura}")
 
 
 while True:
