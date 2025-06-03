@@ -10,15 +10,16 @@ class Plansza:
     def __init__(self):
         self.pola = [[None for _ in range(8)] for _ in range(8)]
         self.initialise()
+        self.tura = 'bialy' #bo miale zaczynaja
 
     #podmienić na faktyczne klasy figur
     def initialise(self):
         for c in range(8):
             self.pola[1][c] = Pionek('bialy', (1, c))
             self.pola[6][c] = Pionek('czarny', (6, c))
-        self.initialise_figure(0,Wieza);
-        self.initialise_figure(1,Skoczek);
-        self.initialise_figure(2,Goniec);
+        self.initialise_figure(0,Wieza)
+        self.initialise_figure(1,Skoczek)
+        self.initialise_figure(2,Goniec)
         self.pola[0][3] = Krol('bialy', (1, c))
         self.pola[0][4] = Krolowa('bialy', (6, c))
         self.pola[7][3] = Krol('czarny', (1, c))
@@ -48,9 +49,20 @@ class Plansza:
         sr, sc = start
         dr, dc = koniec
         figura = self.pola[sr][sc]
-        if figura and koniec in figura.mozliwe_ruchy(self):
+
+        if not figura:
+            return False  # brak figury na starcie
+        if figura.kolor != self.tura:
+            return False  # nie ta tura
+
+        if koniec in figura.mozliwe_ruchy(self):
             self.pola[dr][dc] = figura
             self.pola[sr][sc] = None
             figura.pozycja = (dr, dc)
+
+            # zmiana tury
+            self.tura = 'czarny' if self.tura == 'bialy' else 'bialy'
             return True
+
         return False
+
