@@ -1,0 +1,16 @@
+Jak będziemy pracować:
+
+1. Otwórz w terminalu folder(albo przez cd i podaj ścieżkę, albo kliknij folder prawym i kliknij otwórz w terminalu)
+2. Wpisz: "git checkout main" (przeskakujesz na gałąź main)
+3. Wpisz "git pull origin main" (pullujesz aktualna wersję maina)
+4. Każdy będzie pracować na swojej gałęzi. Wpisz "git checkout -b ImieNazwisko" (to tworzy lokalnie twojego osobistego brancha)
+5. Wpisz "git  push -u origin ImieNazwisko" (to wypycha twoją lokalną gałąź do zdalnego repozytorium)
+6. gdy zrobisz jakieś zmiany to wpisujesz:
+	git add . (dodaje całość)
+	git commit -m "komentarz co zrobiliście" (commit zmian, ważne żeby dodać sensowny komentarz)
+	git push (pushujecie do zdalnego repo)
+
+
+UWAGI:
+- NIE PRACOWAĆ BEZPOŚREDNIO NA MAINIE
+- NIE MARGOWAĆ DO MAINA PÓKI LIDER NIE ZATWIERDZI
