@@ -13,6 +13,7 @@ plansza = Plansza()
 print(plansza)
 print(f"Tura gracza: {plansza.tura}")
 
+historia = []
 
 while True:
     start_str = input("Podaj pozycję startową (np. a1): ")
@@ -23,6 +24,8 @@ while True:
 
     if start_pozycja and koniec_pozycja:
         if plansza.wykonaj_ruch(start_pozycja, koniec_pozycja):
+            historia.append((start_str,koniec_str))
+            print(historia)
             print(plansza)
         else:
             print("Nieprawidłowy ruch.")
