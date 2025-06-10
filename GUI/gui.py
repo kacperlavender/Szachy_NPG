@@ -1,9 +1,11 @@
+# Importowanie wymaganych bibliotek
 import pygame
-from board import Plansza
+from board import Plansza  # Import własnej klasy Plansza z modułu board
 
-ROZMIAR_OKNA = 480
-ROZMIAR_POLA = ROZMIAR_OKNA // 8
-KOLORY = [(238, 238, 210), (118, 150, 86)]  # jasne / ciemne pola
+# Stałe definiujące rozmiar okna i pojedynczego pola szachowego
+ROZMIAR_OKNA = 480  # Rozmiar okna gry w pikselach (kwadratowe)
+ROZMIAR_POLA = ROZMIAR_OKNA // 8  # Rozmiar pojedynczego pola szachowego
+KOLORY = [(238, 238, 210), (118, 150, 86)]  # Kolory pól szachowych (jasne/ciemne) w formacie RGB
 
 def rysuj_plansze(ekran):
     for rzad in range(8):
