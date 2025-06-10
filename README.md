@@ -27,3 +27,21 @@ Prosty program szachowy pozwalający na wykonywanie ruchów na planszy przy uży
 
 ---
 
+## Przykład użycia
+
+```
+Podaj pozycję startową (np. a1): e2
+Podaj pozycję końcową (np. a2): e4
+```
+
+
+Jeśli ruch jest poprawny, plansza zostanie zaktualizowana i pokazana na ekranie.
+
+---
+
+## Uwagi
+
+- Program nie obsługuje zaawansowanych zasad takich jak roszada, promocja pionka czy bicie w przelocie (w zależności od implementacji klasy `Plansza`).
+- Notacja wejściowa musi mieć dokładnie dwa znaki: literę (a-h) i cyfrę (1-8).
+
+
