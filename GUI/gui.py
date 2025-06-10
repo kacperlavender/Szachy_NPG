@@ -5,6 +5,16 @@ ROZMIAR_OKNA = 480
 ROZMIAR_POLA = ROZMIAR_OKNA // 8
 KOLORY = [(238, 238, 210), (118, 150, 86)]  # jasne / ciemne pola
 
+def rysuj_plansze(ekran):
+    for rzad in range(8):
+        for kol in range(8):
+            kolor = KOLORY[(rzad + kol) % 2]
+            pygame.draw.rect(
+                ekran,
+                kolor,
+                pygame.Rect(kol * ROZMIAR_POLA, rzad * ROZMIAR_POLA, ROZMIAR_POLA, ROZMIAR_POLA)
+            )
+
 def main():
     pygame.init()
     ekran = pygame.display.set_mode((ROZMIAR_OKNA, ROZMIAR_OKNA))
