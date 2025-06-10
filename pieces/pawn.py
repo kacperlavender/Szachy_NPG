@@ -8,4 +8,10 @@ class Pionek(Figura):
         nowy_rzad = rzad + kierunek
         if 0 <= nowy_rzad < 8 and plansza.pola[nowy_rzad][kolumna] is None:
             ruchy.append((nowy_rzad, kolumna))
+
+        for delta_kol in [-1, 1]:
+            nowa_kolumna = kolumna + delta_kol
+            if 0 <= nowa_kolumna < 8:
+                ruchy.append((nowy_rzad, nowa_kolumna))
+
         return ruchy
