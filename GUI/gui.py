@@ -7,6 +7,16 @@ ROZMIAR_OKNA = 480  # Rozmiar okna gry w pikselach (kwadratowe)
 ROZMIAR_POLA = ROZMIAR_OKNA // 8  # Rozmiar pojedynczego pola szachowego
 KOLORY = [(238, 238, 210), (118, 150, 86)]  # Kolory pól szachowych (jasne/ciemne) w formacie RGB
 
+SYMBOL_MAPA = {
+    "Pionek": {"bialy": "♙", "czarny": "♟"},
+    "Wieza": {"bialy": "♖", "czarny": "♜"},
+    "Skoczek": {"bialy": "♘", "czarny": "♞"},
+    "Goniec": {"bialy": "♗", "czarny": "♝"},
+    "Krolowa": {"bialy": "♕", "czarny": "♛"},
+    "Krol": {"bialy": "♔", "czarny": "♚"},
+}
+FONT = None  # globalnie
+
 def rysuj_plansze(ekran):
     for rzad in range(8):
         for kol in range(8):
