@@ -1,5 +1,8 @@
 from board import Plansza
 
+global FONT
+FONT = pygame.font.SysFont("Arial", 36)
+rysuj_plansze(ekran, plansza)
 
 def konwertuj_notacje(notacja):
     if len(notacja) == 2 and 'a' <= notacja[0] <= 'h' and '1' <= notacja[1] <= '8':
