@@ -12,6 +12,5 @@ class Pionek(Figura):
             dwa_pola_rzad = rzad + 2 * kierunek
             if rzad == rzad_startowy and plansza.pola[dwa_pola_rzad][kolumna] is None:
                 ruchy.append((dwa_pola_rzad, kolumna))
-        
         return ruchy
         
