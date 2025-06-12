@@ -52,5 +52,20 @@ class Plansza:
             self.pola[dr][dc] = figura
             self.pola[sr][sc] = None
             figura.pozycja = (dr, dc)
+
+        # Promocja pionka
+        # Sprawdź czy figura jest pionkiem 
+        if isinstance(figura, Pionek):
+            # biale pionki promuja na rzedzie 7, czarne na rzedzie 0
+            ostatni_rzad = 7 if figura.kolor == 'bialy' else 0
+            
+            # TO DO:
+                # Jeśli pionek dotarł do swojego ostatniego rzędu (pola promocji)
+                # Promuj pionka na Królową (Hetmana) tego samego koloru
+                # Wyświetl komunikat o promocji
+
+
             return True
         return False
+
+
