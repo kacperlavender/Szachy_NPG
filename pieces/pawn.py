@@ -12,6 +12,8 @@ class Pionek(Figura):
         for delta_kol in [-1, 1]:
             nowa_kolumna = kolumna + delta_kol
             if 0 <= nowa_kolumna < 8:
-                ruchy.append((nowy_rzad, nowa_kolumna))
+                pole = plansza.pola[nowy_rzad][nowa_kolumna]
+                if pole is not None and pole.kolor != self.kolor:
+                    ruchy.append((nowy_rzad, nowa_kolumna))
 
         return ruchy
