@@ -17,15 +17,20 @@ SYMBOL_MAPA = {
 }
 FONT = None  # globalnie
 
-def rysuj_plansze(ekran):
+def rysuj_plansze(ekran, plansza):
     for rzad in range(8):
         for kol in range(8):
             kolor = KOLORY[(rzad + kol) % 2]
-            pygame.draw.rect(
-                ekran,
-                kolor,
-                pygame.Rect(kol * ROZMIAR_POLA, rzad * ROZMIAR_POLA, ROZMIAR_POLA, ROZMIAR_POLA)
-            )
+            pole = pygame.Rect(kol * ROZMIAR_POLA, rzad * ROZMIAR_POLA, ROZMIAR_POLA, ROZMIAR_POLA)
+            pygame.draw.rect(ekran, kolor, pole)
+
+            figura = plansza.pola[rzad][kol]
+            if figura:
+                symbol = SYMBOL_MAPA.get(figura.__class__.__name__, {}).get(figura.kolor, "?")
+                tekst = FONT.render(symbol, True, (0, 0, 0))
+                tekst_rect = tekst.get_rect(center=pole.center)
+                ekran.blit(tekst, tekst_rect)
+
 
 def main():
     pygame.init()
