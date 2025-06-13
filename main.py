@@ -27,8 +27,9 @@ while True:
     koniec_pozycja = konwertuj_notacje(koniec_str)
 
     if start_pozycja and koniec_pozycja:
+        tura = plansza.tura
         if plansza.wykonaj_ruch(start_pozycja, koniec_pozycja):
-            historia.append(start_str+" -> "+koniec_str)
+            historia.append(tura+": "+start_str+" -> "+koniec_str)
             display_hist()
             print(plansza)
         else:
