@@ -58,10 +58,10 @@ class Plansza:
         if isinstance(figura, Pionek):
             # biale pionki promuja na rzedzie 7, czarne na rzedzie 0
             ostatni_rzad = 7 if figura.kolor == 'bialy' else 0
-            
+            if dr == ostatni_rzad:
+               self.pola[dr][dc] = Krolowa(figura.kolor, (dr, dc))           
+
             # TO DO:
-                # Jeśli pionek dotarł do swojego ostatniego rzędu (pola promocji)
-                # Promuj pionka na Królową (Hetmana) tego samego koloru
                 # Wyświetl komunikat o promocji
 
 
