@@ -36,3 +36,5 @@ while True:
             print("Nieprawidłowy ruch.")
     else:
         print("Nieprawidłowy format pozycji.")
+
+    print(f"Tura gracza: {plansza.tura}")
