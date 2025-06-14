@@ -44,7 +44,9 @@ def main():
     running = True
     while running:
         ekran.fill((0, 0, 0))
+        rysuj_plansze(ekran, plansza)
         pygame.display.flip()
+
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
