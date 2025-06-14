@@ -15,7 +15,8 @@ SYMBOL_MAPA = {
     "Krolowa": {"bialy": "♕", "czarny": "♛"},
     "Krol": {"bialy": "♔", "czarny": "♚"},
 }
-FONT = None  # globalnie
+global FONT
+FONT = pygame.font.SysFont("Arial", 36)
 
 def rysuj_plansze(ekran, plansza):
     for rzad in range(8):
