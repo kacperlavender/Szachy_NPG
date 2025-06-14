@@ -32,7 +32,7 @@ class Plansza:
         self.pola[7][7-kor] = f('czarny',(7,7-kor))
 
     def __str__(self):
-        s = "  a b c d e f g h\n"
+        s = "  a  b  c  d  e  f  g  h\n"
         for r in range(7, -1, -1):
             s += f"{r + 1} "
             for c in range(8):

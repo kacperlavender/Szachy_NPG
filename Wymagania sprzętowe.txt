@@ -1,0 +1,30 @@
+# Wymagania sprzętowe – Projekt "Szachy w Pythonie"
+
+## Minimalne wymagania sprzętowe:
+
+- Procesor (CPU): 1 GHz (jednordzeniowy)
+- Pamięć RAM: 512 MB
+- Dysk twardy: 10 MB wolnego miejsca
+- System operacyjny: Windows 7 / Linux Ubuntu 18.04 / macOS 10.13
+- Python: wersja 3.8 lub wyższa
+- Monitor: dowolny (min. 800x600, jeśli pojawi się GUI)
+- Klawiatura: wymagana (gra tekstowa)
+- (opcjonalnie) Mysz: wymagana w przypadku wersji graficznej
+
+## Zalecane wymagania (dla wersji z GUI):
+
+- Procesor (CPU): 2 GHz (dwurdzeniowy)
+- Pamięć RAM: 2 GB
+- Dysk twardy: 50 MB wolnego miejsca
+- System operacyjny: Windows 10 / Linux Ubuntu 20.04 / macOS 12
+- Python: wersja 3.10 lub wyższa
+- Biblioteka `pygame` zainstalowana
+- Ekran HD (1280x720 lub wyższy)
+- Mysz i klawiatura
+
+## Uwagi:
+
+- Program nie wymaga dostępu do Internetu.
+- Można uruchomić go na starszych komputerach i laptopach szkolnych.
+- Działa poprawnie w środowiskach takich jak PyCharm, Visual Studio Code i terminal.
+
